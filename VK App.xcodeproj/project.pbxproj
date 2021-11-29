@@ -61,7 +61,7 @@
 		63DB31012639C8EB0073E462 /* AllGroupsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB31002639C8EB0073E462 /* AllGroupsTableViewCell.swift */; };
 		63F16FF6264A04B800ABF9C4 /* ImageSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F16FF5264A04B800ABF9C4 /* ImageSize.swift */; };
 		63F16FF9264A08F400ABF9C4 /* ViewsCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F16FF8264A08F400ABF9C4 /* ViewsCountView.swift */; };
-		F42DE421275318B6006C0926 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DE420275318B6006C0926 /* LoginView.swift */; };
+		F42DE4272755630D006C0926 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DE4262755630D006C0926 /* LoginView.swift */; };
 		F483DC182742FCC6003E72E0 /* ServiceProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F483DC172742FCC6003E72E0 /* ServiceProxy.swift */; };
 /* End PBXBuildFile section */
 
@@ -123,7 +123,7 @@
 		63F16FF8264A08F400ABF9C4 /* ViewsCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsCountView.swift; sourceTree = "<group>"; };
 		6E60DB829A656F0C3A5403E7 /* Pods-VK App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK App.release.xcconfig"; path = "Target Support Files/Pods-VK App/Pods-VK App.release.xcconfig"; sourceTree = "<group>"; };
 		BA54D041FAB4EF82A7C45D87 /* Pods-VK App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK App.debug.xcconfig"; path = "Target Support Files/Pods-VK App/Pods-VK App.debug.xcconfig"; sourceTree = "<group>"; };
-		F42DE420275318B6006C0926 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F42DE4262755630D006C0926 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F483DC172742FCC6003E72E0 /* ServiceProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProxy.swift; sourceTree = "<group>"; };
 		F72C1A43C075B8E14D91DD78 /* Pods_VK_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VK_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -188,7 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				63964F81262F863500B02FEB /* LoginViewController.swift */,
-				F42DE420275318B6006C0926 /* LoginView.swift */,
+				F42DE4262755630D006C0926 /* LoginView.swift */,
 				6381968F267CAAFC004F3A62 /* WebLoginViewController.swift */,
 			);
 			path = LoginVC;
@@ -532,10 +532,10 @@
 				63330E072647113300886D16 /* CommentControl.swift in Sources */,
 				638E567126E6ABE3005BB577 /* GroupCellModelFactory.swift in Sources */,
 				63DB30F82639B5070073E462 /* VKGruop.swift in Sources */,
+				F42DE4272755630D006C0926 /* LoginView.swift in Sources */,
 				6322A12E26406CE000280C77 /* LetterControl.swift in Sources */,
 				633FAE4F26C5ADC200A3F202 /* GetFuturePromiseData.swift in Sources */,
 				6362296A265BF8C80047DE77 /* InteractiveTransition.swift in Sources */,
-				F42DE421275318B6006C0926 /* LoginView.swift in Sources */,
 				636229502655ED650047DE77 /* UserImagesViewController.swift in Sources */,
 				63F16FF9264A08F400ABF9C4 /* ViewsCountView.swift in Sources */,
 				63F16FF6264A04B800ABF9C4 /* ImageSize.swift in Sources */,

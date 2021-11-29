@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  LoginView.swift
 //  VK App
 //
 //  Created by Lewis on 28.11.2021.
