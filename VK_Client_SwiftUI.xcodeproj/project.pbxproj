@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B0AE8C115AFBCA5EE75B494 /* Pods_VK_Client_SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C16A7AA090D42E830924D90C /* Pods_VK_Client_SwiftUI.framework */; };
+		F404D4F42781F68C0024D8D7 /* PropertyWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F404D4F32781F68C0024D8D7 /* PropertyWrappers.swift */; };
 		F436EA6027772C6600BCE17B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436EA5F27772C6600BCE17B /* LoginViewModel.swift */; };
 		F436EA6C2778F06600BCE17B /* GroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436EA6B2778F06600BCE17B /* GroupViewModel.swift */; };
 		F436EA6F27791B9300BCE17B /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436EA6E27791B9300BCE17B /* ImageViewModel.swift */; };
@@ -34,6 +35,7 @@
 		18CA42DE203920E6E359CF8C /* Pods-VK_Client_SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK_Client_SwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-VK_Client_SwiftUI/Pods-VK_Client_SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		42199C280B352770755A534C /* Pods-VK_Client_SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK_Client_SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-VK_Client_SwiftUI/Pods-VK_Client_SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 		C16A7AA090D42E830924D90C /* Pods_VK_Client_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VK_Client_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F404D4F32781F68C0024D8D7 /* PropertyWrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrappers.swift; sourceTree = "<group>"; };
 		F436EA5F27772C6600BCE17B /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		F436EA6B2778F06600BCE17B /* GroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewModel.swift; sourceTree = "<group>"; };
 		F436EA6E27791B9300BCE17B /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				F4385A00275D79E700EEF88A /* SwiftUIViewModifiers.swift */,
+				F404D4F32781F68C0024D8D7 /* PropertyWrappers.swift */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				F436EA6027772C6600BCE17B /* LoginViewModel.swift in Sources */,
 				F43859ED275D73CD00EEF88A /* ContainerView.swift in Sources */,
 				F43859F0275D73D300EEF88A /* MainTabView.swift in Sources */,
+				F404D4F42781F68C0024D8D7 /* PropertyWrappers.swift in Sources */,
 				F4385A17275D7CB000EEF88A /* ImageModel.swift in Sources */,
 				F441441927664050004C3A82 /* VKLoginWebView.swift in Sources */,
 				F43859E7275D73BB00EEF88A /* FriendsImagesView.swift in Sources */,
