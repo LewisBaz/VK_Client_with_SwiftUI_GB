@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2B0AE8C115AFBCA5EE75B494 /* Pods_VK_Client_SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C16A7AA090D42E830924D90C /* Pods_VK_Client_SwiftUI.framework */; };
+		F436EA6027772C6600BCE17B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436EA5F27772C6600BCE17B /* LoginViewModel.swift */; };
+		F436EA6C2778F06600BCE17B /* GroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436EA6B2778F06600BCE17B /* GroupViewModel.swift */; };
+		F436EA6F27791B9300BCE17B /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436EA6E27791B9300BCE17B /* ImageViewModel.swift */; };
 		F43859C0275D738000EEF88A /* VK_Client_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43859BF275D738000EEF88A /* VK_Client_SwiftUIApp.swift */; };
 		F43859C4275D738300EEF88A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43859C3275D738300EEF88A /* Assets.xcassets */; };
 		F43859C7275D738300EEF88A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43859C6275D738300EEF88A /* Preview Assets.xcassets */; };
@@ -20,12 +23,20 @@
 		F4385A06275D7A2300EEF88A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4385A05275D7A2300EEF88A /* LoginView.swift */; };
 		F4385A17275D7CB000EEF88A /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4385A16275D7CB000EEF88A /* ImageModel.swift */; };
 		F4385A1B275D813200EEF88A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4385A1A275D813200EEF88A /* UserModel.swift */; };
+		F4385A342763C1D300EEF88A /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4385A332763C1D300EEF88A /* GroupModel.swift */; };
+		F4385A3F2763C46A00EEF88A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4385A3E2763C46A00EEF88A /* NetworkService.swift */; };
+		F4385A422763C52300EEF88A /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4385A412763C52300EEF88A /* Session.swift */; };
+		F44144152766383E004C3A82 /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44144142766383E004C3A82 /* UsersViewModel.swift */; };
+		F441441927664050004C3A82 /* VKLoginWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441441827664050004C3A82 /* VKLoginWebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18CA42DE203920E6E359CF8C /* Pods-VK_Client_SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK_Client_SwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-VK_Client_SwiftUI/Pods-VK_Client_SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		42199C280B352770755A534C /* Pods-VK_Client_SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK_Client_SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-VK_Client_SwiftUI/Pods-VK_Client_SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 		C16A7AA090D42E830924D90C /* Pods_VK_Client_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VK_Client_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F436EA5F27772C6600BCE17B /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F436EA6B2778F06600BCE17B /* GroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewModel.swift; sourceTree = "<group>"; };
+		F436EA6E27791B9300BCE17B /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
 		F43859BC275D738000EEF88A /* VK_Client_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VK_Client_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43859BF275D738000EEF88A /* VK_Client_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VK_Client_SwiftUIApp.swift; sourceTree = "<group>"; };
 		F43859C3275D738300EEF88A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,6 +51,11 @@
 		F4385A05275D7A2300EEF88A /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F4385A16275D7CB000EEF88A /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		F4385A1A275D813200EEF88A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		F4385A332763C1D300EEF88A /* GroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
+		F4385A3E2763C46A00EEF88A /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F4385A412763C52300EEF88A /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		F44144142766383E004C3A82 /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
+		F441441827664050004C3A82 /* VKLoginWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKLoginWebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +87,24 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F436EA6A2778F04A00BCE17B /* GroupViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F4385A332763C1D300EEF88A /* GroupModel.swift */,
+				F436EA6B2778F06600BCE17B /* GroupViewModel.swift */,
+			);
+			path = GroupViewModel;
+			sourceTree = "<group>";
+		};
+		F436EA6D27791B3A00BCE17B /* ImageViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F4385A16275D7CB000EEF88A /* ImageModel.swift */,
+				F436EA6E27791B9300BCE17B /* ImageViewModel.swift */,
+			);
+			path = ImageViewModel;
+			sourceTree = "<group>";
+		};
 		F43859B3275D738000EEF88A = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +132,7 @@
 				F43859F8275D743200EEF88A /* Users */,
 				F4385A15275D7C9600EEF88A /* Model */,
 				F4385A03275D79F600EEF88A /* ViewModifiers */,
+				F4385A442763C52900EEF88A /* NetworkService */,
 				F43859C3275D738300EEF88A /* Assets.xcassets */,
 				F43859C8275D738300EEF88A /* Info.plist */,
 				F43859C5275D738300EEF88A /* Preview Content */,
@@ -160,6 +195,8 @@
 			isa = PBXGroup;
 			children = (
 				F4385A05275D7A2300EEF88A /* LoginView.swift */,
+				F436EA5F27772C6600BCE17B /* LoginViewModel.swift */,
+				F441441827664050004C3A82 /* VKLoginWebView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -167,10 +204,29 @@
 		F4385A15275D7C9600EEF88A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F4385A16275D7CB000EEF88A /* ImageModel.swift */,
-				F4385A1A275D813200EEF88A /* UserModel.swift */,
+				F441441327663829004C3A82 /* UsersViewModel */,
+				F436EA6A2778F04A00BCE17B /* GroupViewModel */,
+				F436EA6D27791B3A00BCE17B /* ImageViewModel */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F4385A442763C52900EEF88A /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				F4385A412763C52300EEF88A /* Session.swift */,
+				F4385A3E2763C46A00EEF88A /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		F441441327663829004C3A82 /* UsersViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F4385A1A275D813200EEF88A /* UserModel.swift */,
+				F44144142766383E004C3A82 /* UsersViewModel.swift */,
+			);
+			path = UsersViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,15 +342,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4385A342763C1D300EEF88A /* GroupModel.swift in Sources */,
+				F44144152766383E004C3A82 /* UsersViewModel.swift in Sources */,
+				F436EA6C2778F06600BCE17B /* GroupViewModel.swift in Sources */,
 				F43859EA275D73C400EEF88A /* UserGroupsView.swift in Sources */,
 				F43859E4275D73B700EEF88A /* UserFriendsView.swift in Sources */,
+				F436EA6027772C6600BCE17B /* LoginViewModel.swift in Sources */,
 				F43859ED275D73CD00EEF88A /* ContainerView.swift in Sources */,
 				F43859F0275D73D300EEF88A /* MainTabView.swift in Sources */,
 				F4385A17275D7CB000EEF88A /* ImageModel.swift in Sources */,
+				F441441927664050004C3A82 /* VKLoginWebView.swift in Sources */,
 				F43859E7275D73BB00EEF88A /* FriendsImagesView.swift in Sources */,
+				F4385A422763C52300EEF88A /* Session.swift in Sources */,
 				F4385A01275D79E700EEF88A /* SwiftUIViewModifiers.swift in Sources */,
 				F4385A06275D7A2300EEF88A /* LoginView.swift in Sources */,
 				F4385A1B275D813200EEF88A /* UserModel.swift in Sources */,
+				F4385A3F2763C46A00EEF88A /* NetworkService.swift in Sources */,
+				F436EA6F27791B9300BCE17B /* ImageViewModel.swift in Sources */,
 				F43859C0275D738000EEF88A /* VK_Client_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

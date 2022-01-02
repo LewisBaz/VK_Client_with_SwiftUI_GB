@@ -7,26 +7,27 @@
 
 import SwiftUI
 import ASCollectionView_SwiftUI
+import Kingfisher
 
 struct FriendsImagesView: View {
     
-    @State var images = [
-        ImageModel(image: Image("noImage")),
-        ImageModel(image: Image("noImage")),
-        ImageModel(image: Image("noImage")),
-        ImageModel(image: Image("noImage")),
-        ImageModel(image: Image("noImage")),
-    ]
+    @ObservedObject var images: ImageViewModel
+
+    init(images: ImageViewModel) {
+        self.images = images
+    }
     
     var body: some View {
-        ASCollectionView(data: images) { (image, context) in
-            return FriendsImagesItem(image: image)
+        ASCollectionView(data: images.images) { image, context in
+            FriendsImagesItem(image: image)
         }.layout {
             .grid(
-                layoutMode: .fixedNumberOfColumns(2),
+                layoutMode: .fixedNumberOfColumns(1),
                 itemSpacing: 10,
                 lineSpacing: 10)
-        }.navigationBarTitle("Images")
+        }
+        .navigationBarTitle("Images")
+        .onAppear(perform: { images.getImages() })
     }
 }
 
@@ -34,15 +35,20 @@ struct FriendsImagesItem: View {
     
     let image: ImageModel
     
+    init(image: ImageModel) {
+        self.image = image
+    }
+    
     var body: some View {
-        image.image
+        KFImage(URL(string: image.sizes.last?.url ?? ""))
             .resizable()
+            .scaledToFit()
     }
 }
 
-struct FriendsImagesView_Previews: PreviewProvider {
-    static var previews: some View {
-        FriendsImagesView()
-    }
-}
+//struct FriendsImagesView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        FriendsImagesView()
+//    }
+//}
 

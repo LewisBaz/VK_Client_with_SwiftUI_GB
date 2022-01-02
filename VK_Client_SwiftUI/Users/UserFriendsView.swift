@@ -4,47 +4,51 @@
 //
 //  Created by Lewis on 01.12.2021.
 //
+
 import SwiftUI
+import Kingfisher
 
 struct UserFriendsView: View {
     
+    @ObservedObject var users: UsersViewModel
+
+    init(users: UsersViewModel) {
+        self.users = users
+    }
+    
     var body: some View {
-        UserFriendsRow()
+        UserFriendsRow(users: users)
     }
 }
 
 struct UserFriendsRow: View {
+
+    @ObservedObject var users: UsersViewModel
     
-    @State var users = [
-        UserModel(image: Image("noImage"), firstName: "Lev", lastname: "Bazhkov"),
-        UserModel(image: Image("noImage"), firstName: "Valeriya", lastname: "Sidorova"),
-        UserModel(image: Image("noImage"), firstName: "Pashtet", lastname: "The Dog"),
-        UserModel(image: Image("noImage"), firstName: "User", lastname: "Arbuzer"),
-        UserModel(image: Image("noImage"), firstName: "Ivan", lastname: "Ivanich"),
-        UserModel(image: Image("noImage"), firstName: "Roman", lastname: "Romanich"),
-        UserModel(image: Image("noImage"), firstName: "San", lastname: "Sanich"),
-        UserModel(image: Image("noImage"), firstName: "Victor", lastname: "Deluxe"),
-    ]
+    init(users: UsersViewModel) {
+        self.users = users
+    }
     
     var body: some View {
-        List(users.sorted(by: { $0.lastName < $1.lastName })) { user in
-            NavigationLink(destination: FriendsImagesView()) {
+        List(users.users.sorted(by: { $0.lastName < $1.lastName })) { user in
+            NavigationLink(destination: FriendsImagesView(images: ImageViewModel(networkService: NetworkService(), ownerId: String(user.id)))) {
                 HStack {
                     Text(user.firstName + " " + user.lastName)
                     Spacer()
-                    user.image
+                    KFImage(URL(string: user.image))
                         .resizable()
                         .frame(width: 30, height: 30)
                         .modifier(CircleShadow(shadowColor: .black, shadowRadius: 3, imageRadius: 50))
                 }
             }
         }
+        .onAppear(perform: { users.getUsers() })
         .listStyle(InsetGroupedListStyle())
     }
 }
 
-struct UserFriendsView_Provider: PreviewProvider {
-    static var previews: some View {
-        UserFriendsView()
-    }
-}
+//struct UserFriendsView_Provider: PreviewProvider {
+//    static var previews: some View {
+//        UserFriendsView(users: UsersViewModel(user: UserModel(id: 0, image: "", firstName: "", lastName: ""), networkService: NetworkService()))
+//    }
+//}

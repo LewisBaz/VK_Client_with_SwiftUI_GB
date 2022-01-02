@@ -10,12 +10,13 @@ import SwiftUI
 struct MainTabView: View {
     
     @State private var shouldPushNextView: Bool = false
+    private let networkService = NetworkService()
     
     var body: some View {
         TabView {
             NavigationView {
                 VStack {
-                    UserFriendsView()
+                    UserFriendsView(users: UsersViewModel(networkService: networkService))
                         .navigationBarTitle(Text("Friends"))
                 }
             }
@@ -25,7 +26,7 @@ struct MainTabView: View {
             
             NavigationView {
                 VStack {
-                    UserGroupsView()
+                    UserGroupsView(groups: GroupsViewModel(networkService: networkService))
                         .navigationBarTitle(Text("Groups"))
                 }
             }

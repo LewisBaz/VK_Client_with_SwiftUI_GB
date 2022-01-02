@@ -1,5 +1,5 @@
 PODS:
-  - ASCollectionView-SwiftUI (1.7.1):
+  - ASCollectionView-SwiftUI (2.1.1):
     - DifferenceKit (~> 1.1)
   - DifferenceKit (1.2.0):
     - DifferenceKit/Core (= 1.2.0)
@@ -7,19 +7,23 @@ PODS:
   - DifferenceKit/Core (1.2.0)
   - DifferenceKit/UIKitExtension (1.2.0):
     - DifferenceKit/Core
+  - Kingfisher (7.1.2)
 
 DEPENDENCIES:
-  - ASCollectionView-SwiftUI (~> 1.6)
+  - ASCollectionView-SwiftUI
+  - Kingfisher
 
 SPEC REPOS:
   trunk:
     - ASCollectionView-SwiftUI
     - DifferenceKit
+    - Kingfisher
 
 SPEC CHECKSUMS:
-  ASCollectionView-SwiftUI: 9c24b5293f22e565619edeac39f99de398ce9874
+  ASCollectionView-SwiftUI: 4d944307996a5c947254a3ecd3999cd6183d280a
   DifferenceKit: 5659c430bb7fe45876fa32ce5cba5d6167f0c805
+  Kingfisher: 44ed6a8504763f27bab46163adfac83f5deb240c
 
-PODFILE CHECKSUM: ad2b4b864c0e876d2c0d37817b858d723579c1a1
+PODFILE CHECKSUM: 83546a2e9014ccb1afb7cad661a77c7621bd8677
 
 COCOAPODS: 1.11.2

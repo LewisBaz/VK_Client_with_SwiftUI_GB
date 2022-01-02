@@ -5,7 +5,8 @@ target 'VK_Client_SwiftUI' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-pod 'ASCollectionView-SwiftUI', '~> 1.6'
+pod 'ASCollectionView-SwiftUI'
+pod 'Kingfisher'
 
   # Pods for VK_Client_SwiftUI
 

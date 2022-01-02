@@ -10,13 +10,20 @@ import SwiftUI
 struct ContainerView: View {
     
     @State private var shouldPushNextView: Bool = false
+    @State private var shouldPushNextView2: Bool = false
     
-    var body: some View {
+    @State var sheetPresented = true
         
+    var body: some View {
         if shouldPushNextView {
             MainTabView()
         } else {
             LoginView(isUserLoggedIn: $shouldPushNextView)
+                .sheet(isPresented: $sheetPresented, content: {
+                    VKLoginWebView(closeFunction: {
+                        sheetPresented = false
+                })
+            })
         }
     }
 }
