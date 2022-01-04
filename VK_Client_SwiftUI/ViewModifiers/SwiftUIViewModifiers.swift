@@ -22,3 +22,25 @@ struct CircleShadow: ViewModifier {
                 .shadow(color: shadowColor, radius: shadowRadius))
     }
 }
+
+struct AvatarImageAnimation: ViewModifier {
+    
+    @State var scale: CGFloat
+    var intermediateScale: CGFloat
+    var duration: CGFloat
+    var repeatCount: Int
+    var finalScale: CGFloat
+    
+    func body(content: Content) -> some View {
+        content
+            .scaleEffect(scale)
+            .onAppear {
+                let baseAnimation = Animation.easeInOut(duration: duration)
+                let repeated = baseAnimation.repeatCount(repeatCount)
+                withAnimation(repeated) {
+                    scale = intermediateScale
+                }
+                scale = 1
+            }
+    }
+}

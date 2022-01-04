@@ -39,6 +39,7 @@ struct UserFriendsRow: View {
                         .resizable()
                         .frame(width: 30, height: 30)
                         .modifier(CircleShadow(shadowColor: .black, shadowRadius: 3, imageRadius: 50))
+                        .modifier(AvatarImageAnimation(scale: 1, intermediateScale: 1.1, duration: 0.7, repeatCount: 1, finalScale: 1))
                 }
             }
         }
