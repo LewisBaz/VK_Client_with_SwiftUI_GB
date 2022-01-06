@@ -12,8 +12,6 @@ struct VKLoginWebView: UIViewRepresentable {
     
     fileprivate let navigationDelegate = WebViewNavigationDelegate()
     
-    var closeFunction : (() -> Void)?
-    
     func makeUIView(context: Context) -> WKWebView {
         let webView = WKWebView()
         webView.navigationDelegate = navigationDelegate
@@ -33,7 +31,7 @@ struct VKLoginWebView: UIViewRepresentable {
         components.path = "/authorize"
         components.queryItems = [
             URLQueryItem(name: "client_id", value: "6704883"),
-            URLQueryItem(name: "scope", value: "262150"),
+            URLQueryItem(name: "scope", value: "270342"),
             URLQueryItem(name: "display", value: "mobile"),
             URLQueryItem(name: "redirect_uri", value: "https://oauth.vk.com/blank.html"),
             URLQueryItem(name: "response_type", value: "token"),
@@ -76,13 +74,10 @@ class WebViewNavigationDelegate: NSObject, WKNavigationDelegate {
         
         UserDefaults.standard.set(token, forKey: "vkToken")
         UserDefaults.standard.set(userIdString, forKey: "vkTokenSaved")
-        //NotificationCenter.default.post(name: NSNotification.Name("vkTokenSaved"), object: self)
         
         decisionHandler(.cancel)
         
         Session.shared.token = token
         Session.shared.userId = userIdString
-        
-        print(Session.shared.token)
     }
 }

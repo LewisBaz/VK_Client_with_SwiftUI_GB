@@ -13,7 +13,6 @@ struct LoginView: View {
     @State private var login = ""
     @State private var password = ""
     @State private var shouldShowLogo: Bool = true
-    
     @State private var shouldShowErrorAlert: Bool = false
     
     @ObservedObject var viewModel: LoginViewModel

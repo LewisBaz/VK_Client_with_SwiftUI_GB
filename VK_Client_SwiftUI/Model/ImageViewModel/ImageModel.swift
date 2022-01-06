@@ -76,3 +76,11 @@ enum TypeEnum: String, Codable {
     case z = "z"
 }
 
+struct LikeResponse: Codable {
+    let response: LikesResp
+}
+
+struct LikesResp: Codable {
+    let likes: Int
+}
+
