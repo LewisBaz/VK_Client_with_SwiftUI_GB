@@ -18,6 +18,7 @@ struct UserGroupsView: View {
     
     var body: some View {
         UserGroupsRow(groups: groups)
+            .navigationTitle(Text("Groups"))
     }
 }
 

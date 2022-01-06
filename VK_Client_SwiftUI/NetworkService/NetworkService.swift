@@ -10,8 +10,8 @@ import UIKit
 final class NetworkService {
 
     let url =  "https://api.vk.com"
-    let token = Session.shared.token
-    let userId = Session.shared.userId
+    let token: String = UserDefaults.standard.object(forKey: "vkToken") as! String
+    let userId = UserDefaults.standard.object(forKey: "vkTokenSaved") as! String
     let version = "5.131"
     let ownerID = 0
     private let queue = DispatchQueue(label: "networkQueue", qos: .userInitiated)

@@ -18,6 +18,7 @@ struct UserFriendsView: View {
     
     var body: some View {
         UserFriendsRow(users: users)
+            .navigationTitle(Text("Users"))
     }
 }
 

@@ -15,7 +15,9 @@ struct LoginView: View {
     @State private var shouldShowLogo: Bool = true
     
     @State private var shouldShowErrorAlert: Bool = false
-    @Binding var isUserLoggedIn: Bool
+    
+    @ObservedObject var viewModel: LoginViewModel
+    let appCoordinator: AppFlowCoordinator
     
     private let keyboardIsOnPublisher = Publishers.Merge(
            NotificationCenter.default.publisher(for: UIResponder.keyboardWillChangeFrameNotification)
@@ -83,7 +85,7 @@ struct LoginView: View {
     
     private func onButtonTapped() {
         if login == "" && password == "" {
-            isUserLoggedIn = true
+            self.viewModel.isUserLoggedIn = true
             print("Login success")
         } else {
             print("Login error")
