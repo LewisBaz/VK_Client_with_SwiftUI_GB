@@ -1,20 +1,13 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'VK App' do
+target 'VK_Client_SwiftUI' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-pod 'Alamofire', '~> 5.4'
-pod 'SDWebImage', '~> 5.0'
-pod 'RealmSwift'
-pod 'DynamicJSON'
+pod 'ASCollectionView-SwiftUI'
+pod 'Kingfisher'
 
-pod 'Firebase/Auth'
-pod 'Firebase/Database'
-
-pod 'PromiseKit'
-
-  # Pods for VK App
+  # Pods for VK_Client_SwiftUI
 
 end
